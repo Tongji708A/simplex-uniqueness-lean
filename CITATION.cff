@@ -5,9 +5,6 @@ authors:
   - family-names: Yang
     given-names: Kaiwen
     affiliation: "School of Mathematical Sciences, Tongji University"
-  - family-names: Su
-    given-names: Jiawei
-    affiliation: "Tongji University"
   - family-names: Xu
     given-names: Hao
     affiliation: "Tongji University"
@@ -22,8 +19,6 @@ preferred-citation:
   authors:
     - family-names: Yang
       given-names: Kaiwen
-    - family-names: Su
-      given-names: Jiawei
     - family-names: Xu
       given-names: Hao
     - family-names: Xiong
