@@ -1,0 +1,17 @@
+name = "simplex-uniqueness-lean"
+version = "0.1.0"
+license = "MIT"
+keywords = ["math", "probability", "gaussian", "formalization", "simplex"]
+defaultTargets = ["SimplexUniquenessLean"]
+
+[leanOptions]
+autoImplicit = false
+relaxedAutoImplicit = false
+
+[[require]]
+name = "weak-simplex-conjecture-lean"
+git = "https://github.com/abhmul/weak-simplex-conjecture-lean"
+rev = "f59d449132ca8a08f48093efce41e80cbd772d04"
+
+[[lean_lib]]
+name = "SimplexUniquenessLean"

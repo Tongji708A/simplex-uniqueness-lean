@@ -1,0 +1,6 @@
+/.lake
+audit_output.txt
+codex_*.log
+TASK_*.md
+REPORT_*.md
+AuditAll.lean
