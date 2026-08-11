@@ -5,12 +5,12 @@ authors:
   - family-names: Yang
     given-names: Kaiwen
     affiliation: "School of Mathematical Sciences, Tongji University"
+  - family-names: Su
+    given-names: Mengwei
+    affiliation: "School of Mathematical Sciences, Tongji University"
   - family-names: Xu
     given-names: Hao
     affiliation: "Tongji University"
-  - family-names: Xiong
-    given-names: Ge
-    affiliation: "School of Mathematical Sciences, Tongji University"
 license: MIT
 repository-code: "https://github.com/Tongji708A/simplex-uniqueness-lean"
 preferred-citation:
@@ -19,9 +19,9 @@ preferred-citation:
   authors:
     - family-names: Yang
       given-names: Kaiwen
+    - family-names: Su
+      given-names: Mengwei
     - family-names: Xu
       given-names: Hao
-    - family-names: Xiong
-      given-names: Ge
   year: 2026
   notes: "arXiv identifier to be added upon posting."
