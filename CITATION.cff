@@ -15,7 +15,7 @@ authors:
     given-names: Ge
     affiliation: "School of Mathematical Sciences, Tongji University"
 license: MIT
-repository-code: "https://github.com/TODO/simplex-uniqueness-lean"
+repository-code: "https://github.com/Tongji708A/simplex-uniqueness-lean"
 preferred-citation:
   type: article
   title: "The Equality Cases of the Weak Simplex Conjecture: A Response to Mulgund's Open Problem 8.1"

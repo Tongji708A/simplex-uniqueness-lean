@@ -1,5 +1,7 @@
 # The Equality Cases of the Weak Simplex Conjecture in Lean
 
+[![Lean CI](https://github.com/Tongji708A/simplex-uniqueness-lean/actions/workflows/lean_action_ci.yml/badge.svg?branch=main)](https://github.com/Tongji708A/simplex-uniqueness-lean/actions/workflows/lean_action_ci.yml)
+
 This repository contains a Lean 4 companion formalization for *The Equality
 Cases of the Weak Simplex Conjecture: A Response to Mulgund's Open Problem
 8.1* by Kaiwen Yang, Jiawei Su, Hao Xu and Ge Xiong. It builds on
