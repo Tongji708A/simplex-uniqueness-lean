@@ -1,18 +1,25 @@
-/-
-Module 1 — Strict-monotone rigidity of stochastic domination.
-
-Paper reference: Lemma 6.1 (generalized to strictly increasing test functions).
-This is the lever that upgrades mean-width uniqueness to every-SNR uniqueness:
-if U ≤st V and E f(U) = E f(V) for ONE strictly increasing integrable f, then
-U and V have the same law.  No continuity of the CDFs is needed: the layer-cake
-deficit  ∫ (F_U - F_V) df  vanishes, F_U - F_V ≥ 0, the Stieltjes measure of a
-strictly increasing f charges every nonempty open interval, hence F_U = F_V on
-a dense set, and right-continuity of CDFs finishes.
--/
 import Mathlib.MeasureTheory.Measure.Stieltjes
 import Mathlib.MeasureTheory.Measure.Haar.Unique
 import Mathlib.MeasureTheory.Integral.Layercake
 import Mathlib.Probability.CDF
+
+/-!
+# Strict-monotone rigidity of stochastic domination
+
+First step of the independent route described in Remark 1 of the paper.
+If `μ` is stochastically dominated (`ν (Iic c) ≤ μ (Iic c)` for every `c`)
+and one strictly increasing integrable moment agrees under `μ` and `ν`,
+then `μ = ν`. No continuity of the distribution functions is assumed. The
+layer-cake deficit of the pushed-forward measures vanishes, the identity
+case is settled by positive- and negative-part tail representations, and
+the general case reduces to it through the measurable embedding given by a
+continuous strictly monotone test function.
+
+Specializations to the identity (`measure_eq_of_iic_le_of_mean_eq`) and to
+a single exponential moment (`measure_eq_of_iic_le_of_mgf_eq`) follow. The
+latter is the single-parameter moment-generating rigidity used in the
+paper.
+-/
 
 namespace SimplexUniqueness
 

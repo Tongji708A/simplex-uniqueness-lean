@@ -1,14 +1,17 @@
-/-
-Module 3 — Gram rigidity: equal Gram matrices of two spanning families are
-realized by an orthogonal transformation.
-
-Paper reference: Proposition 6.3, final step.  Two m-tuples in ℝⁿ with the
-same Gram matrix and full span differ by a linear isometry of ℝⁿ.
--/
 import Mathlib.Analysis.InnerProductSpace.LinearMap
 import Mathlib.Analysis.InnerProductSpace.EuclideanDist
 import Mathlib.LinearAlgebra.Finsupp.LinearCombination
 import Mathlib.LinearAlgebra.Isomorphisms
+
+/-!
+# Gram rigidity
+
+The geometric identification step used in the equal-energy part of the
+paper's coding theorem. Two `m`-tuples in `ℝⁿ` with the same Gram matrix
+and full span differ by a linear isometry of `ℝⁿ`. The isometry is built by
+factoring the two coefficient maps through their common kernel and applying
+`LinearEquiv.isometryOfInner`.
+-/
 
 namespace SimplexUniqueness
 

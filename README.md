@@ -4,7 +4,7 @@
 
 This repository contains a Lean 4 companion formalization for *The Equality
 Cases of the Weak Simplex Conjecture: A Response to Mulgund's Open Problem
-8.1* by Kaiwen Yang, Mengwei Su and Hao Xu. It builds on
+8.1* by Mengwei Su, Kaiwen Yang, Hao Xu and Chih-Lin I. It builds on
 [mathlib](https://github.com/leanprover-community/mathlib4) and on the
 formalization accompanying
 [Mulgund's resolution of the Weak Simplex Conjecture](https://github.com/abhmul/weak-simplex-conjecture-lean),

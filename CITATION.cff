@@ -2,26 +2,31 @@ cff-version: 1.2.0
 message: "If you use this formalization, please cite the accompanying paper."
 title: "The Equality Cases of the Weak Simplex Conjecture in Lean"
 authors:
-  - family-names: Yang
-    given-names: Kaiwen
-    affiliation: "School of Mathematical Sciences, Tongji University"
   - family-names: Su
     given-names: Mengwei
+    affiliation: "School of Mathematical Sciences, Tongji University"
+  - family-names: Yang
+    given-names: Kaiwen
     affiliation: "School of Mathematical Sciences, Tongji University"
   - family-names: Xu
     given-names: Hao
     affiliation: "Tongji University"
+  - family-names: I
+    given-names: Chih-Lin
+    affiliation: "China Mobile Research Institute"
 license: MIT
 repository-code: "https://github.com/Tongji708A/simplex-uniqueness-lean"
 preferred-citation:
   type: article
   title: "The Equality Cases of the Weak Simplex Conjecture: A Response to Mulgund's Open Problem 8.1"
   authors:
-    - family-names: Yang
-      given-names: Kaiwen
     - family-names: Su
       given-names: Mengwei
+    - family-names: Yang
+      given-names: Kaiwen
     - family-names: Xu
       given-names: Hao
+    - family-names: I
+      given-names: Chih-Lin
   year: 2026
   notes: "arXiv identifier to be added upon posting."

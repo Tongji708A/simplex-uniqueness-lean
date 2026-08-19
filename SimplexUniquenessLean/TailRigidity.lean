@@ -1,28 +1,31 @@
-/-
-Module 2 — Tail rigidity: the equality case of the stochastic-domination
-theorem.
+import WeakSimplexConjectureLean
 
-Paper reference: Lemma 6.2.  If R is an m×m correlation matrix with
-R - J/m ⪰ 0 and the centered Gaussian with covariance R attains
-P{max_i X_i ≤ c} = Φ(c)^m for EVERY c, then R = I.
+/-!
+# Tail rigidity
 
-Proof route (each step is a standalone lemma below):
-  (a) one-sided union bound with a single pair subtracted:
-      P{max > c} ≤ m·q(c) - p_ρ(c)  for the pair (i,j), ρ = R i j;
-  (b) second-order Bonferroni for the iid side:
-      Φ(c)^m ≤ 1 - m·q(c) + C(m,2)·q(c)²;
-  (c) bivariate lower bound on the square [c, c+1/c]²:
-      p_ρ(c) ≥ (c⁻²/(2π√(1-ρ²))) · exp(-(c+c⁻¹)²/(1+ρ) - ρ/(2(1-ρ²)c²))
-      for 0 < ρ < 1, and p_1(c) = q(c) in the degenerate case;
-  (d) q(c) ≤ φ(c)/c  for c > 0, hence p_ρ(c)/q(c)² → ∞ for every 0 < ρ ≤ 1;
-  (e) (a)-(d) contradict equality at large c unless all off-diagonals are ≤ 0;
-      then 0 ≤ 1ᵀ(R - J/m)1 = 2·Σ_{i<j} R i j forces R = 1.
+Second step of the independent route described in Remark 1 of the paper.
+If `R` is an `m × m` correlation matrix with `R - J/m ⪰ 0` and the centered
+Gaussian with covariance `R` attains `P {max_i X_i ≤ c} = Φ(c)^m` for every
+threshold `c`, then `R = I`.
+
+The proof route, with each step a standalone lemma below:
+1. a one-sided union bound with a single pair subtracted,
+   `P {max > c} ≤ m·q(c) - p_ρ(c)` for a pair `(i, j)` with `ρ = R i j`;
+2. second-order Bonferroni for the independent side,
+   `Φ(c)^m ≤ 1 - m·q(c) + C(m,2)·q(c)²`;
+3. a bivariate lower bound on the square `(c, c + 1/c]²` giving
+   `p_ρ(c) ≥ (c⁻²/(2π√(1-ρ²))) · exp(-(c+c⁻¹)²/(1+ρ) - ρ/(2(1-ρ²)c²))`
+   for `0 < ρ < 1`, with `p_1(c) = q(c)` in the degenerate case;
+4. the Mills bound `q(c) ≤ φ(c)/c` for `c > 0`, whence
+   `p_ρ(c)/q(c)² → ∞` for every `0 < ρ ≤ 1`;
+5. steps 1--4 contradict equality at large `c` unless all off-diagonal
+   entries are nonpositive, and then `0 ≤ 1ᵀ(R - J/m)1 = 2·Σ_{i<j} R i j`
+   forces `R = 1`.
 
 Statement vocabulary is that of the dependency
 `weak-simplex-conjecture-lean` (namespace `WeakSimplex`):
 `multivariateGaussian 0 R`, `lowerOrthant c`, `IsWeakSimplexCov`.
 -/
-import WeakSimplexConjectureLean
 
 namespace SimplexUniqueness
 
